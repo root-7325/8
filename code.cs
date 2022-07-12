@@ -1,15 +1,18 @@
 using System;
-class pribavlenie
+class rectangle
 {
     static void Main()
     {
         int x = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine($"{x}{x}{x}"); 
-        for(int y = 0; y < 3; y++)
+        int y = Convert.ToInt32(Console.ReadLine());
+        int z = Convert.ToInt32(Console.ReadLine());
+        for(int i = 0; i < y; i++)
         {
-            Console.WriteLine($"{x} {x}");
+            for(int j = 0; j < y; j++)
+            {
+                Console.Write(x);
+            }
+            Console.WriteLine();
         }
-        Console.WriteLine($"{x}{x}{x}");
-        Console.ReadKey(true);
     }
 }
